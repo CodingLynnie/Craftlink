@@ -1,0 +1,63 @@
+.favorites-modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.favorites-modal {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-width: 350px;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+.favorites-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #d8572a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.favorites-artisan-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #faf7f2;
+  border-radius: 0.7rem;
+  padding: 0.7rem 1rem;
+}
+.favorites-artisan-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 0.7rem;
+}
+.favorites-artisan-card h4 {
+  margin: 0 0 0.2rem 0;
+  font-size: 1.1rem;
+  color: #2c2c2c;
+}
+.favorites-artisan-card span {
+  display: block;
+  color: #d8572a;
+  font-size: 0.98rem;
+}
